@@ -1,6 +1,23 @@
-input:enabled,
-button:enabled 
-{ 
-    background-color: aqua;
+p{
+    color: red;
 }
 
+#title{
+    color: blue;
+}
+
+#title.box {
+    color: pink;
+}
+
+section div {
+    color: aqua;
+}
+
+label + input {
+    color: skyblue;
+}
+
+a[href="www.naver.com"] ~ span {
+    color: fuchsia;
+}
