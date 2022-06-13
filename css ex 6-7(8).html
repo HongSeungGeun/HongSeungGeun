@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .box{
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          animation-name:bgchange;
+          animation-duration: 5s;
+          animation-fill-mode:forwards;
+          animation-iteration-count: 3;
+        }
+        @keyframes bgchange{
+            0%{background-color: red;}
+            25%{background-color: orange;}
+            50%{background-color: yellow;}
+            100%{background-color: green;}
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 10px;
+        }
+        .box2:hover{
+            transform: skewx(30deg);
+        }
+    </Style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>
